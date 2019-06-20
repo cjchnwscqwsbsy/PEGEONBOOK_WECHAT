@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.5.0",
 	"appid": "wxca86424d888d0b0f",
 	"projectname": "PEGEONBOOK_WECHAT",
 	"debugOptions": {
