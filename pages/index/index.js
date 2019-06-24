@@ -5,9 +5,33 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    show: false,
+    actions: [
+      {
+        name: '选项'
+      },
+      {
+        name: '分享',
+        subname: '描述信息',
+        openType: 'share'
+      },
+      {
+        loading: true
+      },
+      {
+        name: '禁用选项',
+        disabled: true
+      }
+    ]
   },
 
+  onClose() {
+    this.setData({ show: false });
+  },
+
+  onSelect(event) {
+    console.log(event.detail);
+  },
 
   onPageScroll: function (ev){
     console.log('pull',ev);

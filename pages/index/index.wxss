@@ -1,5 +1,71 @@
-.index-time-line{
-  border-left:2px solid black;
-  margin-top: 25%;
-  height: 80%;
+.index-line1{
+  background-color: #999999;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.index-line1-switch-book{
+  background-color: #5f996d;
+  width: 40%;
+}
+
+.index-line2{
+  background-color: #64996a;
+  display: flex;
+  width: 100%;
+  height: 12%;
+  align-content: center;
+}
+.index-line2-income{
+  background-color: #1989fa;
+}
+.index-line2-budget{
+  background-color: #7d7e80;
+}
+.index-line2-spend{
+  background-color: #1989fa;
+}
+
+
+.index-line3{
+  background-color: #997054;
+  align-content: flex-start;
+  display: flex;
+  width: 100%;
+  height: 78%;
+}
+.index-line3-row-container{
+  background-color: #3affb7;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /*justify-content: center;*/
+}
+.index-line3-row{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.index-row-image{
+  height: 30px;
+  width: 30px;
+}
+.index-row-text-left{
+  margin-right: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+.index-row-text-right{
+  margin-left: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+.index-row-line{
+  /*margin-left: 14px;*/
+  background-color: black;
+  width: 2px;
+  height: 10px;
 }

@@ -1,5 +1,36 @@
 <!--pages/index/index.wxml-->
-<view class='container'>
-  <view class='index-time-line' style=''></view>
+<view class="container">
+  <view class="container index-line1"><view class="index-line1-switch-book">行1子元素1</view></view>
+  <view class="container index-line2">
+    <view class="index-line2-income">行2子元素1</view>
+    <view class="index-line2-budget">行2子元素2</view>
+    <view class="index-line2-spend">行2子元素3</view>
+  </view>
+  <view class="container index-line3">
+    <view class="index-line3-row-container">
+      <view style="display: flex;justify-content: center;">
+        <view> </view>
+        <view class="index-row-line"/>
+        <view> </view>
+      </view>
+      <view class="index-line3-row">
+        <view class="index-row-text-left">test</view>
+        <image class="index-row-image" src="/image/tab-bar/icon_API.png" mode="scaleToFill"/>
+        <view class="index-row-text-right">test</view>
+      </view>
+      <view style="display: flex;justify-content: center;">
+        <view> </view>
+        <view class="index-row-line"/>
+        <view> </view>
+      </view>
+    </view>
+    <!--<view class="index-line3-row-container">-->
+      <!--<view class="index-line3-row">日期行</view>-->
+    <!--</view>-->
+    <!--<view class="index-line3-row-container">-->
+      <!--<view class="index-line3-row">日期行</view>-->
+      <!--<view class="index-line3-row">具体行</view>-->
+    <!--</view>-->
+  </view>
 </view>
 

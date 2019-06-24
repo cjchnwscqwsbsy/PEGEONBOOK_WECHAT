@@ -5,7 +5,10 @@ page{
   display: flex;
   justify-content:space-around;
   align-items:flex-start;
-  background-color: rgba(255, 235, 205)
+  background-color: rgb(255, 235, 205);
+  background-color: #F8F8F8;
+  font-size: 16px;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }
 
 .container{
@@ -14,4 +17,5 @@ page{
   display: flex;
   justify-content:space-around;
   align-items:flex-start;
+  flex-wrap:wrap;
 }
