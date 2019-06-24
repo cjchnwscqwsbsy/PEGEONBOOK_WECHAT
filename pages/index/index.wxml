@@ -8,11 +8,7 @@
   </view>
   <view class="container index-line3">
     <view class="index-line3-row-container">
-      <view style="display: flex;justify-content: center;">
-        <view> </view>
-        <view class="index-row-line"/>
-        <view> </view>
-      </view>
+      <view class="index-row-line"/>
       <view class="index-line3-row">
         <view class="index-row-text-left">test</view>
         <image class="index-row-image" src="/image/tab-bar/icon_API.png" mode="scaleToFill"/>
