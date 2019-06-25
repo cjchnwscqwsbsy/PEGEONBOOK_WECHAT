@@ -5,43 +5,74 @@ Page({
    * 页面的初始数据
    */
   data: {
-    show: false,
-    actions: [
+    statements:[
       {
-        name: '选项'
+        leftText: '总收入  10000',
+        rightText: '10000  总支出',
+        imgSrc: '/image/tab-bar/icon_API.png',
       },
       {
-        name: '分享',
-        subname: '描述信息',
-        openType: 'share'
+        leftText: '',
+        rightText: '10000  测试',
+        imgSrc: '/image/tab-bar/icon_API.png',
       },
       {
-        loading: true
+        leftText: '',
+        rightText: '10000  测试',
+        imgSrc: '/image/tab-bar/icon_API.png',
       },
       {
-        name: '禁用选项',
-        disabled: true
-      }
+        leftText: '测试  10000',
+        rightText: '',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
+      {
+        leftText: '总收入  10000',
+        rightText: '10000  总支出',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
+      {
+        leftText: '',
+        rightText: '10000  测试',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
+      {
+        leftText: '',
+        rightText: '10000  测试',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
+      {
+        leftText: '测试  10000',
+        rightText: '',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
+      {
+        leftText: '总收入  10000',
+        rightText: '10000  总支出',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
+      {
+        leftText: '',
+        rightText: '10000  测试',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
+      {
+        leftText: '',
+        rightText: '10000  测试',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
+      {
+        leftText: '测试  10000',
+        rightText: '',
+        imgSrc: '/image/tab-bar/icon_API.png',
+      },
     ]
-  },
-
-  onClose() {
-    this.setData({ show: false });
-  },
-
-  onSelect(event) {
-    console.log(event.detail);
-  },
-
-  onPageScroll: function (ev){
-    console.log('pull',ev);
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(wx.canIUse("onPageScroll"))
   },
 
   /**

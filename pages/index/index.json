@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "statement_row": "/component/statement_row/statement_row"
+  }
 }

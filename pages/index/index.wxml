@@ -6,27 +6,12 @@
     <view class="index-line2-budget">行2子元素2</view>
     <view class="index-line2-spend">行2子元素3</view>
   </view>
-  <view class="container index-line3">
-    <view class="index-line3-row-container">
-      <view class="index-row-line"/>
-      <view class="index-line3-row">
-        <view class="index-row-text-left">test</view>
-        <image class="index-row-image" src="/image/tab-bar/icon_API.png" mode="scaleToFill"/>
-        <view class="index-row-text-right">test</view>
-      </view>
-      <view style="display: flex;justify-content: center;">
-        <view> </view>
-        <view class="index-row-line"/>
-        <view> </view>
-      </view>
-    </view>
-    <!--<view class="index-line3-row-container">-->
-      <!--<view class="index-line3-row">日期行</view>-->
-    <!--</view>-->
-    <!--<view class="index-line3-row-container">-->
-      <!--<view class="index-line3-row">日期行</view>-->
-      <!--<view class="index-line3-row">具体行</view>-->
-    <!--</view>-->
-  </view>
+  <scroll-view  scroll-y="{{true}}" class="container index-statement-container">
+  <!--<view class="container index-line3">-->
+    <statement_row
+        wx:for="{{statements}}" wx:key="index" style="width: 100%;" id="{{item.index}}"
+        imgSrc="{{item.imgSrc}}" leftText="{{item.leftText}}" rightText="{{item.rightText}}"/>
+  <!--</view>-->
+  </scroll-view>
 </view>
 

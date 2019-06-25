@@ -1,0 +1,13 @@
+<!--component/statement_row.wxml-->
+<view class="row-container">
+  <view class="row">
+    <view class="row-text-left">{{leftText}}</view>
+    <image class="row-image" src="{{imgSrc}}" mode="scaleToFill"/>
+    <view class="row-text-right">{{rightText}}</view>
+  </view>
+  <view style="display: flex;justify-content: center;">
+    <view/>
+    <view class="row-line"/>
+    <view/>
+  </view>
+</view>

@@ -19,3 +19,7 @@ page{
   align-items:flex-start;
   flex-wrap:wrap;
 }
+
+.font_lv1{
+  font-size: 13px;
+}
