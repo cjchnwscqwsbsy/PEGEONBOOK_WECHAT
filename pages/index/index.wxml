@@ -1,9 +1,13 @@
 <!--pages/index/index.wxml-->
 <view class="container">
-  <view class="container index-book-container">
-    <view class="index-book"><text>{{current_book_name}}</text><image style="height: 10px; width:13px; margin-left: 10px" src="/image/common/arrow.png" mode="scaleToFill"/></view>
+  <view class="index-book-container">
+    <view class="index-book">
+      <text>{{current_book_name}}</text>
+      <image style="height: 10px; width:13px; margin-left: 10px" src="/image/common/arrow.png" mode="scaleToFill"/>
+    </view>
+    <view class="index-booklist" wx:if="{{3>2}}">booklist</view>
   </view>
-  <view class="container index-budget-container">
+  <view class="index-budget-container">
     <view class="index-budget-income">
       <text style="text-align: center; font-size: 13px; line-height:20px">总收入
       {{total_income}}</text>
@@ -20,8 +24,9 @@
         {{total_spend}}</text>
     </view>
   </view>
-  <scroll-view  scroll-y="{{true}}" class="container index-statement-container">
-    <statement_month month="12"/>
+  <scroll-view  scroll-y="{{true}}" class="index-statement-container">
+    <statement_month wx:for="{{statementData}}" wx:key="item.month"
+                     month="{{item.month}}" dayArray="{{item.dayArray}}"/>
   </scroll-view>
 </view>
 

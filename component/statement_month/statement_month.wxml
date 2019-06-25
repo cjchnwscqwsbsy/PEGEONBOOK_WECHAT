@@ -4,7 +4,7 @@
     <view class="statement-month">{{month}}月</view>
     <view class="month-line"/>
   </view>
-  <statement_day wx:for="{{dayArray}}" day="{{item.day}}" statements="{{item.statements}}"/>
+  <statement_day wx:for="{{dayArray}}" wx:key="item.day" day="{{item.day}}" statements="{{item.statements}}"/>
 </view>
 
 
