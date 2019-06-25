@@ -6,8 +6,6 @@
     <view class="row-text-right">{{rightText}}</view>
   </view>
   <view style="display: flex;justify-content: center;">
-    <view/>
     <view class="row-line"/>
-    <view/>
   </view>
 </view>

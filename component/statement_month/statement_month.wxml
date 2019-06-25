@@ -1,0 +1,11 @@
+<!--component/statement_month/statement_month.wxml-->
+<view class="month-container">
+  <view class="month-inner-container">
+    <view class="statement-month">{{month}}月</view>
+    <view class="month-line"/>
+  </view>
+  <statement_day wx:for="{{dayArray}}" day="{{item.day}}" statements="{{item.statements}}"/>
+</view>
+
+
+

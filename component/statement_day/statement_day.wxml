@@ -1,0 +1,10 @@
+<!--component/statement_day/statement_day.wxml-->
+<view class="day-container">
+  <view class="day">
+    {{day}}日
+  </view>
+  <view class="day-line"/>
+  <statement_row
+      wx:for="{{statements}}" wx:key="item.statementId" style="width: 100%;"
+      imgSrc="{{item.imgSrc}}" leftText="{{item.leftText}}" rightText="{{item.rightText}}"/>
+</view>

@@ -1,6 +1,6 @@
 /* component/statement_row.wxss */
 .row-container{
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   width: 100%;
   display: flex;
   flex-direction: column;

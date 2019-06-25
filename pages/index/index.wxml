@@ -1,17 +1,27 @@
 <!--pages/index/index.wxml-->
 <view class="container">
-  <view class="container index-line1"><view class="index-line1-switch-book">行1子元素1</view></view>
-  <view class="container index-line2">
-    <view class="index-line2-income">行2子元素1</view>
-    <view class="index-line2-budget">行2子元素2</view>
-    <view class="index-line2-spend">行2子元素3</view>
+  <view class="container index-book-container">
+    <view class="index-book"><text>{{current_book_name}}</text><image style="height: 10px; width:13px; margin-left: 10px" src="/image/common/arrow.png" mode="scaleToFill"/></view>
+  </view>
+  <view class="container index-budget-container">
+    <view class="index-budget-income">
+      <text style="text-align: center; font-size: 13px; line-height:20px">总收入
+      {{total_income}}</text>
+    </view>
+    <view class="index-budget-budget">
+      <view class="index-budget-budget-circle">
+        <text style="text-align: center; font-size: 13px;">预算剩余
+        {{budget_remain}}</text>
+      </view>
+      <view class="index-budget-budget-line"/>
+    </view>
+    <view class="index-budget-spend">
+      <text style="text-align: center; font-size: 13px; line-height:20px">总支出
+        {{total_spend}}</text>
+    </view>
   </view>
   <scroll-view  scroll-y="{{true}}" class="container index-statement-container">
-  <!--<view class="container index-line3">-->
-    <statement_row
-        wx:for="{{statements}}" wx:key="index" style="width: 100%;" id="{{item.index}}"
-        imgSrc="{{item.imgSrc}}" leftText="{{item.leftText}}" rightText="{{item.rightText}}"/>
-  <!--</view>-->
+    <statement_month month="12"/>
   </scroll-view>
 </view>
 
