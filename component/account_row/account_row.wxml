@@ -1,0 +1,9 @@
+<!--component/accont_row/account_row.wxml-->
+<view class="asset-row-container">
+    <image class="account-image" src="{{imgSrc}}" mode="aspectFit"/>
+    <text class="account-name font-32">账户名称</text>
+    <text class="account-detail font-23" style="margin-left: 30rpx">{{accountSum}}
+        {{accountComment}}</text>
+    <view style="font-size: 60rpx">△</view>
+    <view style="margin-left: 30rpx; font-size: 60rpx">▽</view>
+</view>

@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/asset/asset",
     "pages/index/index",
     "pages/login/login",
-    "pages/asset/asset",
     "pages/report/report",
     "pages/balance/balance",
     "pages/statement/statement",

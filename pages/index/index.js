@@ -4,10 +4,18 @@ Page({
    * 页面的初始数据
    */
   data: {
+    showBookList: false,
+    manage_book: false,
+    arrowPicSrc:"/image/common/arrow.png",
     current_book_name:'默认账本',
     budget_remain:10000,
     total_income:20000,
     total_spend:10000,
+    bookList:[
+        {id:1,name:"账本1"},
+        {id:2,name:"账本2"},
+        {id:3,name:"账本3"},
+      ],
     statementData: [
       {
         month:'10',
@@ -107,6 +115,26 @@ Page({
     ]
   },
 
+  showOrHideBookList: function (evt){
+      this.setData({
+        manage_book:false,
+        showBookList:!this.data.showBookList,
+        arrowPicSrc:this.data.showBookList?"/image/common/arrow.png":"/image/common/arrow_reverse.png",
+      })
+  },
+  addStatement: function (evt){
+    console.log("addStatement");
+  },
+  manageBook: function (evt){
+    this.setData({
+      manage_book:true
+    });
+  },
+  completeBookManage: function (evt){
+    this.setData({
+      manage_book:false
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

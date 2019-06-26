@@ -1,2 +1,27 @@
 <!--pages/asset/asset.wxml-->
-<text>pages/asset/asset.wxml</text>
+<view class="container">
+  <view class="asset-head-container">
+    <view class="asset-head-tab-asset" bind:tap="showAssetAccount">资产</view>
+    <view class="asset-head-tab-liability" bind:tap="showLiabilityAccount">负债</view>
+    <view class="asset-head-overview">
+      <text>总资产：
+        {{total_assets}}
+      净资产：
+        {{net_assets}}</text>
+    </view>
+    <view class="asset-head-report" bind:tap="navigateToReport"><text>趋势
+      总览</text>
+    </view>
+  </view>
+  <view class="asset-body-container">
+    <view class="asset-body-manage">
+      <view style="margin-right: 50rpx" bind:tap="showAccountFilter">筛选</view>
+    </view>
+    <scroll-view class="asset-body-account" scroll-y="{{true}}" >
+      <account_row wx:for="{{accountArray}}" wx:key="{{item.id}}" bind:tap="viewAccount"
+          accountComment="{{item.accountComment}}" accountSum="{{item.accountSum}}"
+                   manageAccount="{{manageAccount}}" imgSrc="{{item.imgSrc}}"/>
+      <view class="asset-body-account-add" bind:tap="addAccount">+ 添加账户</view>
+    </scroll-view>
+  </view>
+</view>

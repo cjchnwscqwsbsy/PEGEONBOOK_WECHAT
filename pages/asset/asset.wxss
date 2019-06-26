@@ -1,1 +1,78 @@
 /* pages/asset/asset.wxss */
+.asset-head-container{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.asset-head-tab-asset{
+  height: 100%;
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.asset-head-tab-liability{
+  height: 100%;
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.asset-head-overview{
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20rpx;
+  line-height: 26rpx;
+}
+.asset-head-report{
+  height: 100%;
+  width: 14%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.asset-head-report-img{
+  height: 40rpx;
+  width: 50rpx;
+}
+
+.asset-body-container{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.asset-body-manage{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.asset-body-account{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.asset-body-account-add{
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: dashed;
+  border-radius: 15rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+

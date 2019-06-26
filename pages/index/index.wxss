@@ -1,3 +1,13 @@
+.index-add-statement{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100rpx;
+  position: absolute;
+  /*background-color: black;*/
+  z-index: 1;
+  bottom: 25rpx;
+  right: 50rpx;
+}
 .index-book-container{
   /*background-color: #999999;*/
   width: 100%;
@@ -18,10 +28,30 @@
   justify-content: center;
   align-items: center;
 }
-.index-booklist{
+.index-bookList{
+  /*width: 40%;*/
+  padding-left: 25rpx;
+  padding-right: 25rpx;
   position: absolute;
-  bottom: -30rpx;
-  background: #1989fa;
+  top: 90rpx;
+  background: rgb(255, 237, 224);
+  border-style: solid;
+  border-width: 4rpx;
+  border-color: #a8a8a8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  font-size: 30rpx;
+}
+.index-bookList-item{
+  display: flex;
+}
+.index-bookList-item-modify{
+  margin-left: 40rpx;
+}
+.index-bookList-item-delete{
+  margin-left: 10rpx;
 }
 
 .index-budget-container{
