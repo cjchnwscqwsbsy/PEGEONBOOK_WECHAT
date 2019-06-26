@@ -8,17 +8,17 @@
 }
 .day{
   border-style: solid;
-  border-width: 2px;
+  border-width: 4rpx;
   border-radius: 100%;
-  width: 22px;
-  height: 22px;
+  width: 44rpx;
+  height: 44rpx;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10px;
+  font-size: 20rpx;
 }
 .day-line{
   background-color: black;
-  width: 2px;
-  height: 25px;
+  width: 4rpx;
+  height: 50rpx;
 }

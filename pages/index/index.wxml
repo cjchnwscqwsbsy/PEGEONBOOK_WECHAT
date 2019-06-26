@@ -3,24 +3,24 @@
   <view class="index-book-container">
     <view class="index-book">
       <text>{{current_book_name}}</text>
-      <image style="height: 10px; width:13px; margin-left: 10px" src="/image/common/arrow.png" mode="scaleToFill"/>
+      <image style="height: 20rpx; width:26rpx; margin-left: 20rpx" src="/image/common/arrow.png" mode="scaleToFill"/>
     </view>
     <view class="index-booklist" wx:if="{{3>2}}">booklist</view>
   </view>
   <view class="index-budget-container">
     <view class="index-budget-income">
-      <text style="text-align: center; font-size: 13px; line-height:20px">总收入
+      <text style="text-align: center; font-size: 26rpx; line-height:40rpx">总收入
       {{total_income}}</text>
     </view>
     <view class="index-budget-budget">
       <view class="index-budget-budget-circle">
-        <text style="text-align: center; font-size: 13px;">预算剩余
+        <text style="text-align: center; font-size: 26rpx;">预算剩余
         {{budget_remain}}</text>
       </view>
       <view class="index-budget-budget-line"/>
     </view>
     <view class="index-budget-spend">
-      <text style="text-align: center; font-size: 13px; line-height:20px">总支出
+      <text style="text-align: center; font-size: 26rpx; line-height:40rpx">总支出
         {{total_spend}}</text>
     </view>
   </view>

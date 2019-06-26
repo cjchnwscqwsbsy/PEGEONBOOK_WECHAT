@@ -8,9 +8,9 @@
   position: relative;
 }
 .index-book{
-  border-radius: 8px;
+  border-radius: 16rpx;
   border-style: solid;
-  border-width: 2px;
+  border-width: 4rpx;
   border-color: #a8a8a8;
   width: 25%;
   height: 43%;
@@ -20,7 +20,7 @@
 }
 .index-booklist{
   position: absolute;
-  bottom: -15px;
+  bottom: -30rpx;
   background: #1989fa;
 }
 
@@ -48,7 +48,7 @@
 }
 .index-budget-budget-circle{
   border-style: solid;
-  border-width: 2px;
+  border-width: 4rpx;
   border-radius: 75%;
   background-color: #abfadf;
   height: 75%;
@@ -59,7 +59,7 @@
 }
 .index-budget-budget-line{
   background-color: black;
-  width: 2px;
+  width: 4rpx;
   height: 25%;
 }
 .index-budget-spend{
