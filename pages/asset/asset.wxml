@@ -15,10 +15,10 @@
   </view>
   <view class="asset-body-container">
     <view class="asset-body-manage">
-      <view style="margin-right: 50rpx" bind:tap="showAccountFilter">筛选</view>
+      <!--<view style="margin-right: 50rpx" bind:tap="showAccountFilter">筛选</view>-->
     </view>
     <scroll-view class="asset-body-account" scroll-y="{{true}}" >
-      <account_row wx:for="{{accountArray}}" wx:key="{{item.id}}" bind:tap="viewAccount"
+      <account_row wx:for="{{accountArray}}" wx:key="{{item.id}}" bind:tap="viewAccount" data-account-id="{{item.id}}"
           accountComment="{{item.accountComment}}" accountSum="{{item.accountSum}}"
                    manageAccount="{{manageAccount}}" imgSrc="{{item.imgSrc}}"/>
       <view class="asset-body-account-add" bind:tap="addAccount">+ 添加账户</view>

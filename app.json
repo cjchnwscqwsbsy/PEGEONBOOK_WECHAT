@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/asset/asset_detail/asset_detail",
     "pages/asset/asset",
     "pages/index/index",
     "pages/login/login",

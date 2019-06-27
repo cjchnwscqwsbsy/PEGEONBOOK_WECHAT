@@ -1,0 +1,26 @@
+/* pages/asset/asset_detail/asset_detail.wxss */
+input{
+  margin-top: 10rpx;
+  border-style: solid;
+  border-width: 1rpx;
+  width: 450rpx;
+}
+label{
+  margin: 15rpx;
+  padding: 10rpx;
+}
+.asset-detail-form{
+  width: 100%;
+  height: 100%;
+  background: #abfadf;
+}
+.asset-detail-basic{
+  margin: 40rpx;
+  padding: 20rpx;
+  background: #7d7e80;
+}
+.asset-detail-other-container{
+  margin: 40rpx;
+  padding: 20rpx;
+  background: #0bb20c;
+}

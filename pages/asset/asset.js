@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentBody: 'asset'
   },
 
   /**
@@ -36,41 +36,80 @@ Page({
           accountSum: '4000000.00',
           accountComment: '其他详情',
           imgSrc: '/image/tab-bar/icon_API.png'
-        },{
-          id:5,
-          accountSum: '4000000.00',
-          accountComment: '其他详情',
-          imgSrc: '/image/tab-bar/icon_API.png'
-        },{
-          id:6,
-          accountSum: '4000000.00',
-          accountComment: '其他详情',
-          imgSrc: '/image/tab-bar/icon_API.png'
-        },{
-          id:7,
-          accountSum: '4000000.00',
-          accountComment: '其他详情',
-          imgSrc: '/image/tab-bar/icon_API.png'
-        },{
-          id:8,
-          accountSum: '4000000.00',
-          accountComment: '其他详情',
-          imgSrc: '/image/tab-bar/icon_API.png'
-        },{
-          id:9,
-          accountSum: '4000000.00',
-          accountComment: '其他详情',
-          imgSrc: '/image/tab-bar/icon_API.png'
         }
       ]
     })
   },
 
+  showAssetAccount: function (evt) {
+    if(this.data.currentBody === 'asset') return;
+    var bodyData = [
+      {
+        id:1,
+        accountSum: '1000.00',
+        accountComment: '其他详情',
+        imgSrc: '/image/tab-bar/icon_API.png'
+      },{
+        id:2,
+        accountSum: '4000000.00',
+        accountComment: '其他详情',
+        imgSrc: '/image/tab-bar/icon_API.png'
+      },{
+        id:3,
+        accountSum: '4000000.00',
+        accountComment: '其他详情',
+        imgSrc: '/image/tab-bar/icon_API.png'
+      },{
+        id:4,
+        accountSum: '4000000.00',
+        accountComment: '其他详情',
+        imgSrc: '/image/tab-bar/icon_API.png'
+      }
+    ];
+
+    this.setData({
+      accountArray: bodyData,
+      currentBody: 'asset'
+    });
+  },
+
+  showLiabilityAccount: function (evt) {
+    if(this.data.currentBody === 'liability') return;
+    var bodyData = [
+      {
+        id:1,
+        accountSum: '1000.00',
+        accountComment: '负债详情',
+        imgSrc: '/image/tab-bar/icon_API.png'
+      },{
+        id:2,
+        accountSum: '4000000.00',
+        accountComment: '负债详情',
+        imgSrc: '/image/tab-bar/icon_API.png'
+      },{
+        id:3,
+        accountSum: '4000000.00',
+        accountComment: '负债详情',
+        imgSrc: '/image/tab-bar/icon_API.png'
+      },{
+        id:4,
+        accountSum: '4000000.00',
+        accountComment: '负债详情',
+        imgSrc: '/image/tab-bar/icon_API.png'
+      }
+    ];
+
+    this.setData({
+      accountArray: bodyData ,
+      currentBody: 'liability'
+    });
+  },
+
   addAccount: function (evt) {
-    console.log(evt)
+    wx.navigateTo({ url: '/pages/asset/asset_detail/asset_detail' })
   },
   viewAccount: function (evt) {
-    console.log(evt)
+    console.log(evt.currentTarget.dataset.accountId);
   },
 
   /**
