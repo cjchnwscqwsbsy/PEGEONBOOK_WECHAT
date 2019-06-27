@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/asset/asset_detail/asset_detail",
     "pages/asset/asset",
+    "pages/asset/asset_detail/asset_detail",
     "pages/index/index",
     "pages/login/login",
     "pages/report/report",

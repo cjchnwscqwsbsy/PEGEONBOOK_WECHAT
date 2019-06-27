@@ -106,10 +106,10 @@ Page({
   },
 
   addAccount: function (evt) {
-    wx.navigateTo({ url: '/pages/asset/asset_detail/asset_detail' })
+    wx.navigateTo({ url: '/pages/asset/asset_detail/asset_detail'})
   },
   viewAccount: function (evt) {
-    console.log(evt.currentTarget.dataset.accountId);
+    wx.navigateTo({ url: '/pages/asset/asset_detail/asset_detail?account_id='+evt.currentTarget.dataset.accountId});
   },
 
   /**

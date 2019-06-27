@@ -2,28 +2,28 @@
 <form class="asset-detail-form" bindsubmit="formSubmit" bindreset="formReset">
   <view class="asset-detail-basic">
     <view style="margin-top: 30rpx">账户名</view>
-    <input class="asset-detail-name" name="account_name"/>
+    <input class="asset-detail-name" name="account_name" value="{{account_name}}"/>
     <view style="margin-top: 30rpx">账户类型</view>
     <radio-group class="asset-detail-type" name="account_type" bindchange="typeChange">
-      <label><radio value="Asset"/>资产</label>
-      <label><radio value="Liability"/>负债</label>
-      <label><radio value="Virtual"/>虚拟账户</label>
+      <label><radio checked="{{account_type === 'Asset'}}" value="Asset"/>资产</label>
+      <label><radio checked="{{account_type === 'Liability'}}" value="Liability"/>负债</label>
+      <label><radio checked="{{account_type === 'Virtual'}}" value="Virtual"/>虚拟账户</label>
     </radio-group>
     <view style="margin-top: 30rpx">初始金额</view>
-    <input type="digit" class="asset-detail-name" name="account_amount"/>
+    <input type="digit" class="asset-detail-name" name="account_amount" value="{{account_amount}}"/>
   </view>
   <view class="asset-detail-other-container">
-    <view class="asset-detail-other" wx:if="{{accountType === 'Asset'}}">
+    <view class="asset-detail-other" wx:if="{{account_type === 'Asset'}}">
       <!--<view>资产账户详细属性</view>      -->
     </view>
-    <view class="asset-detail-other" wx:if="{{accountType === 'Liability'}}">
+    <view class="asset-detail-other" wx:if="{{account_type === 'Liability'}}">
       <view style="margin-top: 30rpx">信用额度</view>
-      <input type="digit" class="asset-detail-name" name="account_amount"/>
+      <input type="digit" class="asset-detail-name" name="account_limit" value="{{account_limit}}"/>
       <view style="margin-top: 30rpx">还款日</view>
-      <input type="number" name="repayment_date"/>
+      <input type="number" name="repayment_date" value="{{repayment_date}}"/>
 
     </view>
-    <view class="asset-detail-other" wx:if="{{accountType === 'Virtual'}}">
+    <view class="asset-detail-other" wx:if="{{account_type === 'Virtual'}}">
       <!--虚拟账户详细属性-->
     </view>
   </view>

@@ -10,18 +10,22 @@ Page({
 
   formSubmit: function (evt) {
     for(var item in evt.detail.value){
-      // eval("console.log(evt.detail.value."+item+")");
-      console.log(item);
-      if(!item){
+      if(!evt.detail.value[item]){
         wx.showToast({
           title: '请将信息填写完整',
           icon: 'none',
-          duration: 1000
+          duration: 1500
         });
         return;
       }
     }
     console.log(evt.detail.value);
+    wx.showToast({
+      title: '保存成功',
+      icon: 'success',
+      duration: 1500
+      // success:
+    });
     // wx.navigateBack();
   },
   cancle: function (evt) {
@@ -30,7 +34,7 @@ Page({
   typeChange: function (evt) {
     console.log(evt.detail.value);
     this.setData({
-      accountType: evt.detail.value
+      account_type: evt.detail.value
     });
   },
 
@@ -38,7 +42,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var account_id = options.account_id;
+    if(options.account_id){
+      this.setData({
+        account_name: 'aaaa',
+        account_type: 'Liability',
+        account_limit: '1000',
+      });
+    }
   },
 
   /**

@@ -17,10 +17,8 @@ label{
 .asset-detail-basic{
   margin: 40rpx;
   padding: 20rpx;
-  background: #7d7e80;
 }
 .asset-detail-other-container{
   margin: 40rpx;
   padding: 20rpx;
-  background: #0bb20c;
 }
