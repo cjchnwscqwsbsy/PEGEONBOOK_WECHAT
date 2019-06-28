@@ -1,0 +1,16 @@
+<!--component/budget_row/budget_row.wxml-->
+<view class="container budget-row-container">
+  <view class="budget-row-title">
+    <text style="margin-left: 20rpx;">{{budgetRowName}}</text>
+    <view class="budget-row-preview">
+      <view class="budget-row-unuse" style="width: {{remainSum/totalSum*100 + '%'}};"/>
+    </view>
+    <view class="budget-row-amount">
+      <text style="width: 50%">预算总量：{{totalSum}}</text>
+      <text style="width: 50%">剩余预算：{{remainSum}}</text>
+    </view>
+  </view>
+  <budget_row_detail wx:if="{{showDetail}}" wx:for="{{budgetDetails}}" wx:key="{{item.statementTypeName}}"
+                     picSrc="{{item.picSrc}}" statementTypeName="{{item.statementTypeName}}"
+                     totalSum="{{item.totalSum}}" remainSum="{{item.remainSum}}"/>
+</view>

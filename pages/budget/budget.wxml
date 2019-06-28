@@ -1,2 +1,36 @@
 <!--pages/budget/budget.wxml-->
-<text>pages/budget/budget.wxml</text>
+<view class="container">
+  <view class="budget-init width-full">初始化预算</view>
+  <view class="budget-expected-stores width-full">预计实际储存：{{expectedStores}}</view>
+  <view class="budget-preview-container width-full">
+    <view class="budget-preview-total">
+      <view class="budget-preview-used budget-preview-inner" style="width:{{used}};"></view>
+      <view class="budget-preview-store budget-preview-inner" style="width:{{store}};">
+        <view class="budget-preview-beyond budget-preview-inner" style="width:{{beyond}};"></view>
+      </view>
+    </view>
+  </view>
+  <view class="budget-preview-legend width-full">
+    <view class="budget-preview-legend-pic" style="background:#3f74c1;"/>
+    <view class="budget-preview-legend-text">已用</view>
+    <view class="budget-preview-legend-pic" style="background:#68c16b"/>
+    <view class="budget-preview-legend-text">剩余预算</view>
+    <view class="budget-preview-legend-pic" style="background:#ffe6e9;"/>
+    <view class="budget-preview-legend-text">计划存储</view>
+    <view class="budget-preview-legend-pic" style="background:#ff543c;"/>
+    <view class="budget-preview-legend-text">超出预算</view>
+  </view>
+  <view class="budget-basic-container width-full">
+    <view class="width-full;" style="display:flex;">
+      <view style="width: 50%;margin-left: 23rpx">预算名：{{budgetName}}</view>
+      <view style="width: 50%;margin-left: 10rpx">预算模型：{{budgetModle}}</view>
+    </view>
+    <view class="width-full;" style="display:flex;">
+      <view style="width: 50%;margin-left: 23rpx">预算周期：{{budgetTerm}}</view>
+      <view style="width: 50%;margin-left: 10rpx"> 起始日：{{nextDate}}</view>
+    </view>
+  </view>
+  <view class="budget-detail-container width-full">
+    <budget_row />
+  </view>
+</view>

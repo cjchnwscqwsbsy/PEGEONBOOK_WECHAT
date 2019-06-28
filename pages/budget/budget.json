@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "budget_row": "/component/budget_row/budget_row"
+  }
 }

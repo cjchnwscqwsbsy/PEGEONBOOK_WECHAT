@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "budget_row_detail":"budget_row_detail/budget_row_detail"
+  }
+}

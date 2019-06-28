@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/budget/budget",
     "pages/asset/asset",
     "pages/asset/asset_detail/asset_detail",
     "pages/index/index",
@@ -7,7 +8,6 @@
     "pages/report/report",
     "pages/balance/balance",
     "pages/statement/statement",
-    "pages/budget/budget",
     "pages/config/config"
   ],
   "tabBar": {

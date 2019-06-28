@@ -1,0 +1,14 @@
+<!--component/budget_row/budget_row_detail/budget_row_detail.wxml-->
+<view class="row-detail-container">
+  <view class="row-detail-basic">
+    <image src="{{picSrc}}" mode="scaleToFill" style="height: 30rpx;width: 30rpx;"/>
+    <text style="margin-left: 20rpx;">{{statementTypeName}}</text>
+  </view>
+  <view class="row-detail-preview">
+    <view class="row-detail-unuse" style="width: {{remainSum/totalSum*100 + '%'}};"/>
+  </view>
+  <view class="row-detail-amount">
+    <text style="width: 50%">预算总量：{{totalSum}}</text>
+    <text style="width: 50%">剩余预算：{{remainSum}}</text>
+  </view>
+</view>
