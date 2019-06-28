@@ -1,4 +1,5 @@
 // pages/asset/asset_detail/asset_detail.js
+var event = require("../../../utils/event");
 Page({
 
   /**
@@ -23,10 +24,12 @@ Page({
     wx.showToast({
       title: '保存成功',
       icon: 'success',
-      duration: 1500
-      // success:
+      duration: 1500,
+      success: function () {
+        event.emit('refreshAssetPage');
+      }
     });
-    // wx.navigateBack();
+    wx.navigateBack();
   },
   cancle: function (evt) {
     wx.navigateBack();
