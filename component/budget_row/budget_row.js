@@ -6,7 +6,9 @@ Component({
   properties: {
     budgetRowName:{
       type: String,
-      // value: '默认分类'
+    },
+    budgetRowType:{
+      type: String,
     },
     totalSum:{
       type: Number,

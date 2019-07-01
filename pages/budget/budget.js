@@ -13,6 +13,7 @@ Page({
     budgetArray:[
       {
         budgetRowName: '预算1',
+        budgetRowType: '预算类型',
         totalSum: 3000,
         remainSum: 2500,
         budgetDetails: [
@@ -32,6 +33,7 @@ Page({
       },
       {
         budgetRowName: '预算2',
+        budgetRowType: '预算类型',
         totalSum: 3000,
         remainSum: 2500,
         budgetDetails: [

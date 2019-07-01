@@ -32,7 +32,8 @@
   </view>
   <scroll-view class="budget-detail-container width-full" scroll-y="{{true}}">
     <budget_row wx:for="{{budgetArray}}" wx:key="{{item.budgetRowName}}"
-                budgetRowName="{{item.budgetRowName}}" totalSum="{{item.totalSum}}" remainSum="{{item.remainSum}}"
+                budgetRowName="{{item.budgetRowName}}" budgetRowType="{{item.budgetRowType}}"
+                totalSum="{{item.totalSum}}" remainSum="{{item.remainSum}}"
                 budgetDetails="{{item.budgetDetails}}" showDetail="{{showDetail}}"/>
   </scroll-view>
 </view>

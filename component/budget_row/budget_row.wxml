@@ -1,7 +1,10 @@
 <!--component/budget_row/budget_row.wxml-->
 <view class="container budget-row-container">
   <view class="budget-row-title" bind:tap="onTitleTap">
-    <text style="margin-left: 20rpx;">{{budgetRowName}}</text>
+    <view style="width: 100%;display: flex;">
+      <view style="width: 50%;padding-left: 60rpx">{{budgetRowName}}</view>
+      <view style="width: 50%;display:flex;justify-content:flex-end;padding-right: 40rpx">{{budgetRowType}}</view>
+    </view>
     <view class="budget-row-preview">
       <view class="budget-row-unuse" style="width: {{remainSum/totalSum*100 + '%'}};"/>
     </view>
