@@ -2,6 +2,10 @@
 <view class="container">
   <view class="budget-init width-full">初始化预算</view>
   <view class="budget-expected-stores width-full">预计实际储存：{{expectedStores}}</view>
+  <view class="budget-total width-full" style="display: flex;align-items: center">
+    <view class="budget-total-amount">总预算量：{{totalBudget}}</view>
+    <view class="budget-total-used">总使用量：{{totalUsed}}</view>
+  </view>
   <view class="budget-preview-container width-full">
     <view class="budget-preview-total">
       <view class="budget-preview-used budget-preview-inner" style="width:{{used}};"></view>

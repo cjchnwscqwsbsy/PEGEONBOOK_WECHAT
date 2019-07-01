@@ -5,66 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    expectedStores: '10000',
-    budgetName: '测试预算',
-    budgetModle: '测试预算模型',
-    budgetTerm: '每 1 月',
-    nextDate: '2019年6月28日',
-    budgetArray:[
-      {
-        budgetRowName: '预算1',
-        budgetRowType: '预算类型',
-        totalSum: 3000,
-        remainSum: 2500,
-        budgetDetails: [
-          {
-            picSrc: '/image/tab-bar/icon_API.png',
-            statementTypeName:'流水名称1',
-            totalSum: 1000,
-            remainSum: 1000,
-          },
-          {
-            picSrc: '/image/tab-bar/icon_API.png',
-            statementTypeName:'流水名称2',
-            totalSum: 2000,
-            remainSum: 1500,
-          },
-        ]
-      },
-      {
-        budgetRowName: '预算2',
-        budgetRowType: '预算类型',
-        totalSum: 3000,
-        remainSum: 2500,
-        budgetDetails: [
-          {
-            picSrc: '/image/tab-bar/icon_API.png',
-            statementTypeName:'流水名称1',
-            totalSum: 1000,
-            remainSum: 1000,
-          },
-          {
-            picSrc: '/image/tab-bar/icon_API.png',
-            statementTypeName:'流水名称2',
-            totalSum: 2000,
-            remainSum: 1500,
-          },
-          {
-            picSrc: '/image/tab-bar/icon_API.png',
-            statementTypeName:'流水名称3',
-            totalSum: 2000,
-            remainSum: 1500,
-          },
-          {
-            picSrc: '/image/tab-bar/icon_API.png',
-            statementTypeName:'流水名称4',
-            totalSum: 2000,
-            remainSum: 1500,
-          },
-        ]
-      },
-    ],
-    showDetail: true,
+    showDetail: false,
   },
 
   /**
@@ -76,10 +17,72 @@ Page({
     var store = 400;
     var canUse = total - store;
     var beyond = store - (total - used);
+    var expectedStores = total - used;
     this.setData({
+      totalBudget: total,
+      totalUsed: used,
       used: Math.round((used>canUse?canUse:used)/total*100) + '%',
       store: Math.round(store/total*100) + '%',
-      beyond: Math.round((beyond > 0 ? (beyond > store? store:beyond):0)/store*100) + '%'
+      beyond: Math.round((beyond > 0 ? (beyond > store? store:beyond):0)/store*100) + '%',
+      expectedStores: expectedStores,
+      budgetName: '测试预算',
+      budgetModle: '测试预算模型',
+      budgetTerm: '每 1 月',
+      nextDate: '2019年6月28日',
+      budgetArray:[
+        {
+          budgetRowName: '预算1',
+          budgetRowType: '预算类型',
+          totalSum: 3000,
+          remainSum: 2500,
+          budgetDetails: [
+            {
+              picSrc: '/image/tab-bar/icon_API.png',
+              statementTypeName:'流水名称1',
+              totalSum: 1000,
+              remainSum: 1000,
+            },
+            {
+              picSrc: '/image/tab-bar/icon_API.png',
+              statementTypeName:'流水名称2',
+              totalSum: 2000,
+              remainSum: 1500,
+            },
+          ]
+        },
+        {
+          budgetRowName: '预算2',
+          budgetRowType: '预算类型',
+          totalSum: 3000,
+          remainSum: 2500,
+          budgetDetails: [
+            {
+              picSrc: '/image/tab-bar/icon_API.png',
+              statementTypeName:'流水名称1',
+              totalSum: 1000,
+              remainSum: 1000,
+            },
+            {
+              picSrc: '/image/tab-bar/icon_API.png',
+              statementTypeName:'流水名称2',
+              totalSum: 2000,
+              remainSum: 1500,
+            },
+            {
+              picSrc: '/image/tab-bar/icon_API.png',
+              statementTypeName:'流水名称3',
+              totalSum: 2000,
+              remainSum: 1500,
+            },
+            {
+              picSrc: '/image/tab-bar/icon_API.png',
+              statementTypeName:'流水名称4',
+              totalSum: 2000,
+              remainSum: 1500,
+            },
+          ]
+        },
+      ],
     });
   },
 

@@ -9,9 +9,14 @@
   justify-content: flex-end;
   padding-right: 25rpx;
 }
+.budget-total,
 .budget-expected-stores{
-  height: 5%;
+  height: 4%;
   padding-left: 25rpx;
+}
+.budget-total-amount,
+.budget-total-used{
+  width: 50%;
 }
 
 .budget-preview-container{
@@ -76,7 +81,7 @@
   align-items: center;
 }
 .budget-detail-container{
-  height: 69%;
+  height: 66%;
   margin-left: 25rpx;
   margin-right: 25rpx;
   display: flex;
