@@ -6,36 +6,21 @@ Component({
   properties: {
     budgetRowName:{
       type: String,
-      value: '默认分类'
+      // value: '默认分类'
     },
     totalSum:{
       type: Number,
-      value: 1000
+      // value: 1000
     },
     remainSum:{
       type: Number,
-      value: 900
+      // value: 900
     },
     budgetDetails:{
       type : Array,
-      value : [
-        {
-          picSrc: '/image/tab-bar/icon_API.png',
-          statementTypeName:'测试名称1',
-          totalSum: 1000,
-          remainSum: 800,
-        },
-        {
-          picSrc: '/image/tab-bar/icon_API.png',
-          statementTypeName:'测试名称2',
-          totalSum: 900,
-          remainSum: 800,
-        },
-      ]
     },
     showDetail:{
       type: Boolean,
-      value: true
     }
   },
 
@@ -43,13 +28,18 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    arrowPicSrc:"/image/common/arrow.png",
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-
+    onTitleTap:function () {
+      this.setData({
+        showDetail: !this.data.showDetail,
+        arrowPicSrc: this.data.showDetail?"/image/common/arrow_reverse.png":"/image/common/arrow.png",
+      })
+    }
   }
 })

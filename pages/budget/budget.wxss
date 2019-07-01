@@ -16,7 +16,6 @@
 
 .budget-preview-container{
   height: 6%;
-  background: #999999;
   margin-left: 25rpx;
   margin-right: 25rpx;
   display: flex;
@@ -68,7 +67,6 @@
 
 .budget-basic-container{
   height: 10%;
-  background: #07c160;
   margin-left: 25rpx;
   margin-right: 25rpx;
   font-size: 28rpx;
@@ -78,8 +76,10 @@
   align-items: center;
 }
 .budget-detail-container{
-  height: 65%;
-  background: #333333;
+  height: 69%;
   margin-left: 25rpx;
   margin-right: 25rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

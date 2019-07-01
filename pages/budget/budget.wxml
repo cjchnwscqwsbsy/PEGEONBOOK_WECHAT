@@ -30,7 +30,9 @@
       <view style="width: 50%;margin-left: 10rpx"> 起始日：{{nextDate}}</view>
     </view>
   </view>
-  <view class="budget-detail-container width-full">
-    <budget_row />
-  </view>
+  <scroll-view class="budget-detail-container width-full" scroll-y="{{true}}">
+    <budget_row wx:for="{{budgetArray}}" wx:key="{{item.budgetRowName}}"
+                budgetRowName="{{item.budgetRowName}}" totalSum="{{item.totalSum}}" remainSum="{{item.remainSum}}"
+                budgetDetails="{{item.budgetDetails}}" showDetail="{{showDetail}}"/>
+  </scroll-view>
 </view>

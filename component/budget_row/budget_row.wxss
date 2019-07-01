@@ -1,14 +1,15 @@
 /* component/budget_row/budget_row.wxss */
-.budget-row-title{
-  width: 100%;
-}
 .budget-row-container{
-  background: #abfadf;
-  padding: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 10rpx;
+}
+.budget-row-title{
+  width: 100%;
 }
 .budget-row-title{
   border-style: solid;
@@ -64,4 +65,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+}
+
+budget_row_detail{
+  width: 100%;
+  margin-bottom: 5rpx;
 }

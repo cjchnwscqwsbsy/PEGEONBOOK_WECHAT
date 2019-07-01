@@ -10,6 +10,59 @@ Page({
     budgetModle: '测试预算模型',
     budgetTerm: '每 1 月',
     nextDate: '2019年6月28日',
+    budgetArray:[
+      {
+        budgetRowName: '预算1',
+        totalSum: 3000,
+        remainSum: 2500,
+        budgetDetails: [
+          {
+            picSrc: '/image/tab-bar/icon_API.png',
+            statementTypeName:'流水名称1',
+            totalSum: 1000,
+            remainSum: 1000,
+          },
+          {
+            picSrc: '/image/tab-bar/icon_API.png',
+            statementTypeName:'流水名称2',
+            totalSum: 2000,
+            remainSum: 1500,
+          },
+        ]
+      },
+      {
+        budgetRowName: '预算2',
+        totalSum: 3000,
+        remainSum: 2500,
+        budgetDetails: [
+          {
+            picSrc: '/image/tab-bar/icon_API.png',
+            statementTypeName:'流水名称1',
+            totalSum: 1000,
+            remainSum: 1000,
+          },
+          {
+            picSrc: '/image/tab-bar/icon_API.png',
+            statementTypeName:'流水名称2',
+            totalSum: 2000,
+            remainSum: 1500,
+          },
+          {
+            picSrc: '/image/tab-bar/icon_API.png',
+            statementTypeName:'流水名称3',
+            totalSum: 2000,
+            remainSum: 1500,
+          },
+          {
+            picSrc: '/image/tab-bar/icon_API.png',
+            statementTypeName:'流水名称4',
+            totalSum: 2000,
+            remainSum: 1500,
+          },
+        ]
+      },
+    ],
+    showDetail: true,
   },
 
   /**
