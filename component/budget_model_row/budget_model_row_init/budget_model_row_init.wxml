@@ -1,4 +1,11 @@
 <!--component/budget_model_row/budget_model_row_init/budget_model_row_init.wxml-->
-<view class="container">
-  <view class="budget-model-row-title"></view>
+<view class="budget-model-row-container">
+  <view class="budget-model-row-title" bind:tap="onTitleTap">
+    <view style="width: 50%">{{rowName}}</view>
+    <view style="width: 50%">{{rowType}}</view>
+    <image style="height: 30rpx; width:35rpx;position:absolute;bottom:35rpx;right:50rpx"
+           src="{{arrowPicSrc}}" mode="scaleToFill" />
+  </view>
+  <budget_model_row_detail wx:for="{{details}}" wx:key="item.id" wx:if="{{showDetail}}"
+      statementType="{{item.statementType}}" disabled="{{item.isAuto}}" value="{{item.value}}"/>
 </view>

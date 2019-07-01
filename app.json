@@ -1,11 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/budget/budget_init/budget_init",
     "pages/budget/budget",
     "pages/asset/asset",
     "pages/asset/asset_detail/asset_detail",
-
+    "pages/index/index",
     "pages/login/login",
     "pages/report/report",
     "pages/balance/balance",

@@ -2,6 +2,7 @@
 <view class="container" style="position: relative">
   <image class="index-add-statement" src="/image/common/add_cricle.png" mode="scaleToFill" bind:tap="addStatement"/>
   <view class="index-book-container">
+    <!--<select_box_editable currentValue="{{current_book_name}}" optionList="{{bookList}}" onSelect="{{onSelect}}"/>-->
     <view class="index-book" bind:tap="showOrHideBookList">
       <text>{{current_book_name}}</text>
       <image style="height: 20rpx; width:26rpx; margin-left: 20rpx" src="{{arrowPicSrc}}" mode="scaleToFill"/>
@@ -24,7 +25,7 @@
     </view>
     <view class="index-budget-budget">
       <view class="index-budget-budget-circle">
-        <text style="text-align: center; font-size: 26rpx;">预算剩余
+        <text style="text-align: center; font-size: 24rpx;">预算剩余
         {{budget_remain}}</text>
       </view>
       <view class="index-budget-budget-line"/>

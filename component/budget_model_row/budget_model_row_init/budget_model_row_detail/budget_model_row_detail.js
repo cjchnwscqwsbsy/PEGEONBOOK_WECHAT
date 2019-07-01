@@ -4,7 +4,21 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    statementType:{
+      type: String ,
+      value: '默认名称'
+    },
+    disabled:{
+      type: Boolean,
+    },
+    value:{
+      type: Number,
+      value: null
+    },
+    placeholder:{
+      type: String,
+      value: '默认占位'
+    }
   },
 
   /**

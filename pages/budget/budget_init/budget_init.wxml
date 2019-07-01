@@ -1,11 +1,14 @@
 <!--pages/budget/budget_init/budget_init.wxml-->
 <view class="container">
   <view class="budget-init-choose-model">
-    <view>{{model_name}}</view>
-    <button/>
+    <view>模板名</view>
   </view>
-  <view class="budget-init-total"></view>
+  <view class="budget-init-total">
+    <view style="display: flex;">预算总额：<input type="digit"/></view>
+    <view>计划储蓄金额：<text>1000</text></view>
+  </view>
   <scroll-view class="budget-init-detail-container" scroll-y>
-
+    <budget_model_row_init wx:for="{{budgetRows}}" wx:key="{{item.id}}"
+        rowName="{{item.rowName}}" rowType="{{item.rowType}}" details="{{item.details}}"/>
   </scroll-view>
 </view>

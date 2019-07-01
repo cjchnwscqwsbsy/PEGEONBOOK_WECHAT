@@ -1,2 +1,20 @@
 <!--component/common/select_box/editable/select_box_editable.wxml-->
-<text>component/common/select_box/editable/select_box_editable.wxml</text>
+<view class="select-box-container">
+  <view class="select-box-value" bind:tap="onShow">
+    <text>{{currentValue}}</text>
+    <image style="height: 20rpx; width:26rpx; margin-left: 20rpx" src="{{arrowPicSrc}}" mode="scaleToFill"/>
+  </view>
+  <view class="select-box-option-list" wx:if="{{showOption}}">
+    <view class="select-box-option-item" wx:for="{{optionList}}" wx:key="{{item.id}}"
+          bind:tap="onSelect" data-id="{{item.id}}">
+      {{item.name}}
+      <view class="select-box-option-item-modify" wx:if="{{manageOption}}"
+            catch:tap="onEdit" data-id="{{item.id}}">编辑</view>
+      <view class="select-box-option-item-delete" wx:if="{{manageOption}}"
+            catch:tap="onDelete" data-id="{{item.id}}">删除</view>
+    </view>
+    <view class="select-box-option-list-manage" wx:if="{{!manageOption}}" bind:tap="onManage">管理账本</view>
+    <view class="select-box-option-list-add" wx:if="{{manageOption}}">添加账本</view>
+    <view class="select-box-option-list-complite" wx:if="{{manageOption}}" bind:tap="onManage">完成</view>
+  </view>
+</view>
