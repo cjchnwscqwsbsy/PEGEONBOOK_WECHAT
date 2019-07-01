@@ -1,0 +1,11 @@
+<!--pages/budget/budget_init/budget_init.wxml-->
+<view class="container">
+  <view class="budget-init-choose-model">
+    <view>{{model_name}}</view>
+    <button/>
+  </view>
+  <view class="budget-init-total"></view>
+  <scroll-view class="budget-init-detail-container" scroll-y>
+
+  </scroll-view>
+</view>

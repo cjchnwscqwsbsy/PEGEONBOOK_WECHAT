@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "statement_month": "/component/statement_month/statement_month"
+    "statement_month": "/component/statement_month/statement_month",
+    "select_box_editable":"/component/common/select_box/editable/select_box_editable"
   }
 }

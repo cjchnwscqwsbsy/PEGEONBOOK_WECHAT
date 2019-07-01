@@ -34,7 +34,7 @@
         {{total_spend}}</text>
     </view>
   </view>
-  <scroll-view  scroll-y="{{true}}" class="index-statement-container" style="display: flex; ">
+  <scroll-view  scroll-y="{{true}}" class="index-statement-container" >
     <statement_month wx:for="{{statementData}}" wx:key="item.month"
                      month="{{item.month}}" dayArray="{{item.dayArray}}"/>
   </scroll-view>

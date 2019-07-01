@@ -1,6 +1,5 @@
 /* component/statement_month/statement_month.wxss */
 .month-container{
-  height: 100%;
   width: 100%;
 }
 .month-inner-container{
