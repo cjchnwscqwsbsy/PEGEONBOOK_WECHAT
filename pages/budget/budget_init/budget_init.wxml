@@ -1,7 +1,7 @@
 <!--pages/budget/budget_init/budget_init.wxml-->
 <view class="container">
   <view class="budget-init-choose-model">
-    <view>模板名</view>
+    <view>选择模板</view><view>预算名</view>
   </view>
   <view class="budget-init-total">
     <view style="display: flex;">预算总额：<input type="digit"/></view>
