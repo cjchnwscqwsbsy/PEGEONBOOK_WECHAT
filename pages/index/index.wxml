@@ -24,7 +24,7 @@
       {{total_income}}</text>
     </view>
     <view class="index-budget-budget">
-      <view class="index-budget-budget-circle">
+      <view class="index-budget-budget-circle" bind:tap="toBudgetPage">
         <text style="text-align: center; font-size: 24rpx;">预算剩余
         {{budget_remain}}</text>
       </view>

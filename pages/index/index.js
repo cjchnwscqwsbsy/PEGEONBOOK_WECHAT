@@ -114,7 +114,11 @@ Page({
       },
     ]
   },
-
+  toBudgetPage: function (evt){
+    wx.navigateTo({
+      url: '/pages/budget/budget'
+    });
+  },
   showOrHideBookList: function (evt){
       this.setData({
         manage_book:false,
