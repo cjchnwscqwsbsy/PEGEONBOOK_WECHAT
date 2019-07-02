@@ -33,6 +33,9 @@ Component({
       this.setData({
         valueType: e.detail.value
       })
+    },
+    onDelete : function (e) {
+      console.log(e.currentTarget.dataset.detailId)
     }
   }
 })

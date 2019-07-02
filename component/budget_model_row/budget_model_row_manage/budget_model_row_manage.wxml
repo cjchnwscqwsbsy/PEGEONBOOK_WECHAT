@@ -1,10 +1,12 @@
 <!--component/budget_model_row/budget_model_row_manage/budget_model_row_manage.wxml-->
 <view class="container budget-model-row-manage-container">
   <view class="budget-model-row-manage-title" bind:tap="onTitleTap">
-    <view style="width: 25%;display: flex;justify-content: center">{{rowId}}</view>
-    <view style="width: 45%">{{rowName}}</view>
+    <view style="width: 15%;display: flex;justify-content: center">{{rowId}}</view>
+    <view style="width: 35%">{{rowName}}</view>
     <view style="width: 30%">{{rowType}}</view>
-    <image style="height: 30rpx; width:35rpx;position:absolute;bottom:40rpx;right:20rpx"
+    <view style="width: 10%;display: flex;justify-content: center" catchtap="onEdit"  data-row-id="{{rowId}}">编辑</view>
+    <view style="width: 10%;display: flex;justify-content: center" catchtap="onDelete" data-row-id="{{rowId}}">删除</view>
+    <image style="height: 30rpx; width:35rpx;margin-left: 10rpx;margin-right: 10rpx"
            src="{{arrowPicSrc}}" mode="scaleToFill" />
   </view>
   <budget_model_row_detail class="budget-model-row-manage-detail"

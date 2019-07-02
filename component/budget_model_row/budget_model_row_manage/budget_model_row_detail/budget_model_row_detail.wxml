@@ -8,6 +8,7 @@
         <radio value="{{item.value}}"/>{{item.name}}
       </label>
   </radio-group>
+    <view style="width: 100rpx" bindtap="onDelete" data-detail-id="{{detailId}}">删除</view>
   </view>
   <lable wx:if="{{valueType === 'formula'}}" style="display:flex;margin-left: 30rpx;margin-top:10rpx;margin-bottom:10rpx">
     计算公式：<input class="detail-formula" type="text" style="width: 300rpx;"/>

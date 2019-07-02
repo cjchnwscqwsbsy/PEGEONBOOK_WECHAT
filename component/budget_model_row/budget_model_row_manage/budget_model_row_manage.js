@@ -28,5 +28,11 @@ Component({
         arrowPicSrc: this.data.showDetail?"/image/common/arrow.png":"/image/common/arrow_reverse.png",
       })
     },
+    onEdit: function (e) {
+      console.log(e.currentTarget.dataset)
+    },
+    onDelete: function (e) {
+      console.log(e.currentTarget.dataset)
+    }
   }
 })
