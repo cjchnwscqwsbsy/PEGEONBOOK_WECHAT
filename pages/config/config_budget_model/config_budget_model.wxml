@@ -1,0 +1,29 @@
+<!--pages/config/config_budget_model/config_budget_model.wxml-->
+<!-- config-budget-model -->
+<view class="container config-budget-model-container">
+  <view class="config-budget-model-title">预算模型名：<input type="text"/></view>
+  <view class="config-budget-model-other">
+    <view class="config-budget-model-other-term">
+      <view>预算周期：</view>
+      <view style="display: flex">
+        <input type="number" style="width: 60rpx;" bindblur="validateMonth" value="{{termMonth}}"/>月
+      </view>
+    </view>
+    <view class="config-budget-model-other-start">
+      <view>起始时间：</view>
+      <view style="display: flex">
+        每<text>{{termMonth}}</text>个月的
+        <input type="number" style="width: 60rpx;" bindblur="validateDay" value="{{startDay}}"/>日
+      </view>
+    </view>
+  </view>
+  <scroll-view class="config-budget-model-detail" scroll-y>
+    <budget_model_row_manage wx:for="{{modelRows}}" wx:key="{{item.rowId}}"
+                             rowId="{{item.rowId}}" rowName="{{item.rowName}}"
+                             rowType="{{item.rowType}}" details="{{item.details}}"/>
+  </scroll-view>
+  <view class="config-budget-model-buttons">
+    <button>保存</button>
+    <button>取消</button>
+  </view>
+</view>

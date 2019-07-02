@@ -1,5 +1,6 @@
 <!--component/budget_model_row/budget_model_row_init/budget_model_row_detail/budget_model_row_detail.wxml-->
 <view class="row-detail-container">
   <view class="row-name">{{statementType}}</view>
-  <input class="row-value" style="padding-left: 5rpx" disabled="{{disabled}}" value="{{value}}" placeholder="{{placeholder}}"/>
+  <input class="row-value" style="padding-left: 5rpx;border-style:{{disabled?'none':'solid'}}"
+         disabled="{{disabled}}" value="{{value}}" placeholder="{{placeholder}}"/>
 </view>

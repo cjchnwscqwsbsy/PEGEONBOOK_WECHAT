@@ -1,10 +1,11 @@
 <!--pages/budget/budget_init/budget_init.wxml-->
-<view class="container">
+<view class="container budget-init-container">
   <view class="budget-init-choose-model">
-    <view>选择模板</view><view>预算名</view>
+    <view>选择模板</view>
   </view>
   <view class="budget-init-total">
-    <view style="display: flex;">预算总额：<input type="digit"/></view>
+    <view style="display: flex;align-items: center">预算名：<input type="text"/></view>
+    <view style="display: flex;align-items: center">预算总额：<input type="digit"/></view>
     <view>计划储蓄金额：<text>1000</text></view>
   </view>
   <scroll-view class="budget-init-detail-container" scroll-y>
