@@ -1,10 +1,33 @@
 <!--pages/statement/statement.wxml-->
 <view class="container statement-container">
   <view class="statement-direction-container">
-    <view class="statement-direction">支出</view>
-    <view class="statement-direction">收入</view>
-    <view class="statement-direction">转账</view>
+    <view class="statement-direction" bindtap="changeToSpend">支出</view>
+    <view class="statement-direction" bindtap="changeToIncome">收入</view>
+    <view class="statement-direction" bindtap="changeToTransfer">转账</view>
   </view>
-  <view class="statement-type-container">流水类型</view>
-  <view class="statement-detail-container">流水详情</view>
+  <view class="statement-type-container">
+    <statement_select_block wx:if="{{statementDirection !== 'TRANSFER'}}" statementTypes="{{statementTypes}}"/>
+    <view wx:if="{{statementDirection === 'TRANSFER'}}" >
+      <view>转出账户</view>
+      <view>箭头</view>
+      <view>转入账户</view>
+    </view>
+  </view>
+  <view class="statement-detail-container">
+    <view style="display: flex;margin-left: 60rpx;margin-bottom: 20rpx;">日期：
+      <picker mode = "date" value="{{date}}" start="{{pickerStartDate}}" end="{{pickerEndDate}}" bindchange="bindDateChange" fields="day">
+        <view>{{date}}</view>
+      </picker>
+    </view>
+    <view style="display: flex;margin-bottom: 20rpx;margin-left: 60rpx">
+      金额：<input type="digit" style="border-style: solid;border-width: 2rpx;width: 400rpx"/>
+    </view>
+    <view style="display: flex;margin-bottom: 20rpx;margin-left: 60rpx">
+      备注：<textarea  style="border-style: solid;border-width: 2rpx;height: 100rpx;width: 400rpx"/>
+    </view>
+  </view>
+  <view class="statement-button">
+    <button>取消</button>
+    <button>确认</button>
+  </view>
 </view>

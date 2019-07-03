@@ -4,19 +4,16 @@
   padding-right: 30rpx;
 }
 .statement-direction-container{
-  background: #abfadf;
   width: 100%;
   height: 10%;
   display: flex;
   align-items: center;
 }
 .statement-type-container{
-  background: #999999;
   width: 100%;
-  height: 60%;
+  height: 50%;
 }
 .statement-detail-container{
-  background: #3f74c1;
   width: 100%;
   height: 30%;
 }
@@ -25,4 +22,13 @@
   width: 33%;
   display: flex;
   justify-content: center;
+}
+
+.statement-button{
+  display: flex;
+  width: 100%;
+  height: 10%;
+}
+button{
+  width: 40%;
 }

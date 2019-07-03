@@ -1,0 +1,18 @@
+<!--component/statement/statement_select_block/statement_select_block.wxml-->
+<view class="container statement-select-block-container">
+  <view class="statement-select-block-title">
+    <image style="height: 100%;width: 10%;display: flex;justify-content: center;align-items: center;padding-left: 10rpx" src="{{imgSrc}}" mode="aspectFit"/>
+    <view style="display: flex;align-items: center;width: 60%;padding-left: 5rpx">{{statementTypeName}}</view>
+    <view style="display: flex;align-items: center;width: 30%;padding-left: 50rpx">编辑类型</view>
+  </view>
+  <view class="statement-select-block-list">
+    <picker-view indicator-style="height: 50rpx;" style="width: 100%;height: 100%;" value="{{value}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{statementTypes}}" wx:key="{{item.id}}" style="display:flex;justify-content:center;line-height: 50px">{{item.name}}</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{secondTypes}}" wx:key="{{item.id}}" style="display:flex;justify-content:center;line-height: 50px">{{item.name}}</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>
