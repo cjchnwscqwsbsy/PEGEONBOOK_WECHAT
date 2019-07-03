@@ -7,12 +7,17 @@
   height: 100%;
 }
 .detail-id{
-  margin-left: 10rpx;
-  width: 10%;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
 }
 .detail-statement-type{
-  width: 25%;
+  border-style: solid;
+  border-width: 2rpx;
+  width: 50%;
+  margin-right: 10rpx;
 }
 .detail-value-type{
-  width: 60%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }

@@ -15,7 +15,7 @@ Component({
    */
   data: {
     arrowPicSrc:"/image/common/arrow.png",
-    showDetail: false,
+    showDetail: true,
   },
 
   /**
