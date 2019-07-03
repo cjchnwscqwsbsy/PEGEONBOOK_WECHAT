@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "statement_day": "/component/statement_day/statement_day"
-  }
-}

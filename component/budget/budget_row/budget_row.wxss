@@ -1,0 +1,74 @@
+/* component/budget_row/budget_row.wxss */
+.budget-row-container{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.budget-row-title{
+  width: 100%;
+}
+.budget-row-title{
+  border-style: solid;
+  border-width: 5rpx;
+  margin-bottom: 5rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row-detail-container{
+  width: 70%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 5rpx;
+}
+.row-detail-basic{
+  height: 24rpx;
+  font-size: 24rpx;
+  width: 85%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.budget-row-preview{
+  height: 24rpx;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background: #1989fa;
+  margin-top: 10rpx;
+  margin-bottom: 15rpx;
+  border-style: solid;
+  border-width: 2rpx;
+}
+.budget-row-unuse{
+  height: 100%;
+  background: #68c16b;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+.budget-row-amount{
+  height: 24rpx;
+  font-size: 24rpx;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+budget_row_detail{
+  width: 100%;
+  margin-bottom: 5rpx;
+}

@@ -1,0 +1,20 @@
+/* component/budget_model_row/budget_model_row_init/budget_model_row_detail/budget_model_row_detail.wxss */
+.row-detail-container{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 80rpx;
+  border-style: solid;
+  border-width: 2rpx;
+  margin-bottom: 10rpx;
+}
+.row-name{
+  margin-left: 20rpx;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.row-value{
+  width: 50%;
+  margin-right: 20rpx;
+}

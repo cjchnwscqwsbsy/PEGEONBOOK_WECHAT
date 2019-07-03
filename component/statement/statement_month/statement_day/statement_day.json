@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "statement_row": "statement_row/statement_row"
+  }
+}

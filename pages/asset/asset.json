@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "account_row": "/component/account_row/account_row"
+    "account_row": "/component/asset/account_row/account_row"
   }
 }

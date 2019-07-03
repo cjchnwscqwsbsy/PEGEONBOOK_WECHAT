@@ -1,2 +1,10 @@
 <!--pages/statement/statement.wxml-->
-<text>pages/statement/statement.wxml</text>
+<view class="container statement-container">
+  <view class="statement-direction-container">
+    <view class="statement-direction">支出</view>
+    <view class="statement-direction">收入</view>
+    <view class="statement-direction">转账</view>
+  </view>
+  <view class="statement-type-container">流水类型</view>
+  <view class="statement-detail-container">流水详情</view>
+</view>
