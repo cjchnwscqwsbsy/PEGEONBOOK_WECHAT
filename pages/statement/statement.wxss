@@ -29,6 +29,11 @@
   width: 100%;
   height: 10%;
 }
+
+.account_select_block{
+  display: flex;
+  flex-direction: column;
+}
 button{
   width: 40%;
 }

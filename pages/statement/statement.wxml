@@ -7,10 +7,10 @@
   </view>
   <view class="statement-type-container">
     <statement_select_block wx:if="{{statementDirection !== 'TRANSFER'}}" statementTypes="{{statementTypes}}"/>
-    <view wx:if="{{statementDirection === 'TRANSFER'}}" >
-      <view>转出账户</view>
-      <view>箭头</view>
-      <view>转入账户</view>
+    <view class="account_select_block" wx:if="{{statementDirection === 'TRANSFER'}}" >
+      <account_select_block />
+      <image src="/image/common/arrow_down.png" mode="aspectFit" style="height: 50rpx"/>
+      <account_select_block />
     </view>
   </view>
   <view class="statement-detail-container">

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "statement_select_block":"/component/statement/statement_select_block/statement_select_block"
+    "statement_select_block":"/component/statement/statement_select_block/statement_select_block",
+    "account_select_block":"/component/asset/account_select_block/account_select_block"
   }
 }
