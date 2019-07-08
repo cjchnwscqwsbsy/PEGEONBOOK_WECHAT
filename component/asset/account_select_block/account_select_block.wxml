@@ -1,2 +1,5 @@
 <!--component/asset/account_select_block/account_select_block.wxml-->
-<text>component/asset/account_select_block/account_select_block.wxml</text>
+<picker class="container account-select-block" bindchange="bindPickerChange" range="{{accountArray}}" range-key="accountName">
+  <view class="account-detail">{{accountName}}</view>
+  <view class="account-type">{{accountType}}</view>
+</picker>

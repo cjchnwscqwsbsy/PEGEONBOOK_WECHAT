@@ -8,9 +8,9 @@
   <view class="statement-type-container">
     <statement_select_block wx:if="{{statementDirection !== 'TRANSFER'}}" statementTypes="{{statementTypes}}"/>
     <view class="account_select_block" wx:if="{{statementDirection === 'TRANSFER'}}" >
-      <account_select_block />
+      <account_select_block accountArray="{{accountArray}}"/>
       <image src="/image/common/arrow_down.png" mode="aspectFit" style="height: 50rpx"/>
-      <account_select_block />
+      <account_select_block accountArray="{{accountArray}}"/>
     </view>
   </view>
   <view class="statement-detail-container">

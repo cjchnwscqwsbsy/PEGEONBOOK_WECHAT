@@ -30,6 +30,18 @@ Page({
       date: today,
       pickerStartDate: pickerStartDate,
       pickerEndDate: pickerEndDate,
+      accountArray:[
+        {
+          accountId:1,
+          accountName:'账户名1',
+          accountType:'资产'
+        },
+        {
+          accountId:2,
+          accountName:'账户名2',
+          accountType:'负债'
+        },
+      ],
       statementTypes: [
         {id:1,name:'支出顶层1',children:[
             {id:1,name:"1 支出子类1",imgSrc:'/image/tab-bar/icon_API.png'},

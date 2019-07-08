@@ -1,1 +1,25 @@
 /* component/asset/account_select_block/account_select_block.wxss */
+.account-select-block{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.account-detail{
+  height: 100%;
+  width: 600rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0rpx;
+  padding-left: 60rpx;
+}
+.account-type{
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 0rpx;
+  padding-right: 60rpx;
+}
