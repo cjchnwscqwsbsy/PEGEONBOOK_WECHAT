@@ -27,6 +27,9 @@ Component({
         accountName: accountArrayElement.accountName,
         accountType: accountArrayElement.accountType,
       });
+      this.triggerEvent('accountchange',{
+        accountId: accountArrayElement.accountId
+      })
     }
   }
 })

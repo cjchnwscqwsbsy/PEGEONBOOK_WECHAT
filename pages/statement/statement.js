@@ -73,9 +73,18 @@ Page({
   },
   changeToTransfer: function (e) {
     if(this.data.statementDirection === 'TRANSFER') return;
-    // this.initStatementData('TRANSFER')
     this.setData({
       statementDirection:'TRANSFER'
+    });
+  },
+  changeOutAccount: function (e) {
+    this.setData({
+      outAccount:e.detail.accountId
+    });
+  },
+  changeInAccount: function (e) {
+    this.setData({
+      inAccount:e.detail.accountId
     });
   },
   initStatementData: function (direction) {
@@ -116,7 +125,6 @@ Page({
         break;
       }
     }
-
     this.setData({
       statementTypes: statementTypes,
       statementDirection: direction
