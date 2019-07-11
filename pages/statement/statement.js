@@ -13,7 +13,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      bookId:options.bookId
+    });
   },
 
   /**
@@ -129,6 +131,22 @@ Page({
       statementTypes: statementTypes,
       statementDirection: direction
     })
+  },
+  inputMoney: function (e) {
+    this.setData({
+      money:e.detail.value
+    });
+  },
+  inputComment: function (e) {
+    this.setData({
+      comment:e.detail.value
+    });
+  },
+  cancel: function (e) {
+    wx.navigateBack();
+  },
+  comfirm: function (e) {
+    console.log(this.data);
   },
   /**
    * 生命周期函数--监听页面显示

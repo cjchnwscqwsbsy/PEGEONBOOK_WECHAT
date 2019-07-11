@@ -20,14 +20,14 @@
       </picker>
     </view>
     <view style="display: flex;margin-bottom: 20rpx;margin-left: 60rpx">
-      金额：<input type="digit" style="border-style: solid;border-width: 2rpx;width: 400rpx"/>
+      金额：<input type="digit" style="border-style: solid;border-width: 2rpx;width: 400rpx" bindblur="inputMoney"/>
     </view>
     <view style="display: flex;margin-bottom: 20rpx;margin-left: 60rpx">
-      备注：<textarea  style="border-style: solid;border-width: 2rpx;height: 100rpx;width: 400rpx"/>
+      备注：<textarea  style="border-style: solid;border-width: 2rpx;height: 100rpx;width: 400rpx" bindblur="inputComment"/>
     </view>
   </view>
   <view class="statement-button">
-    <button>取消</button>
-    <button>确认</button>
+    <button bindtap="cancel">取消</button>
+    <button bindtap="comfirm">确认</button>
   </view>
 </view>

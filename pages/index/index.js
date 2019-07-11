@@ -127,7 +127,11 @@ Page({
       })
   },
   addStatement: function (evt){
-    console.log("addStatement");
+    // TODO 获取账本Id待完成
+    let bookId = '1';
+    wx.navigateTo({
+      url: '/pages/statement/statement?bookId='+1
+    })
   },
   manageBook: function (evt){
     this.setData({

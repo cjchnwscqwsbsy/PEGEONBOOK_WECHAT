@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "budget_model_row_init":"/component/budget_model_row/budget_model_row_init/budget_model_row_init"
+    "budget_model_row_init":"/component/budget/budget_model_row/budget_model_row_init/budget_model_row_init"
   }
 }
