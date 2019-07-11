@@ -4,9 +4,9 @@
     <text>{{currentValue}}</text>
     <image style="height: 20rpx; width:26rpx; margin-left: 20rpx" src="{{arrowPicSrc}}" mode="scaleToFill"/>
   </view>
-  <view class="select-box-option-list" wx:if="{{showOption}}">
+  <view class="select-box-option-list" wx:if="{{showOption}}" style="width: {{manageOption?'200%':'100%'}}">
     <view class="select-box-option-item" wx:for="{{optionList}}" wx:key="{{item.id}}"
-          bind:tap="onSelect" data-id="{{item.id}}">
+          catch:tap="onSelect" data-id="{{item.id}}" data-name="{{item.name}}">
       {{item.name}}
       <view class="select-box-option-item-modify" wx:if="{{manageOption}}"
             catch:tap="onEdit" data-id="{{item.id}}">编辑</view>

@@ -23,6 +23,7 @@
   padding-right: 25rpx;
   position: absolute;
   top: 90rpx;
+  width: 200%;
   background: rgb(255, 237, 224);
   border-style: solid;
   border-width: 4rpx;
@@ -35,10 +36,13 @@
 }
 .select-box-option-item{
   display: flex;
+  flex-wrap: nowrap;
 }
 .select-box-option-item-modify{
   margin-left: 40rpx;
+  width: auto;
 }
 .select-box-option-item-delete{
   margin-left: 10rpx;
+  width: auto;
 }

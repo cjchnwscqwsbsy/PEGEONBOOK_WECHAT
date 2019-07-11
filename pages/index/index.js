@@ -119,13 +119,6 @@ Page({
       url: '/pages/budget/budget'
     });
   },
-  showOrHideBookList: function (evt){
-      this.setData({
-        manage_book:false,
-        showBookList:!this.data.showBookList,
-        arrowPicSrc:this.data.showBookList?"/image/common/arrow.png":"/image/common/arrow_reverse.png",
-      })
-  },
   addStatement: function (evt){
     // TODO 获取账本Id待完成
     let bookId = '1';
@@ -133,16 +126,10 @@ Page({
       url: '/pages/statement/statement?bookId='+1
     })
   },
-  manageBook: function (evt){
-    this.setData({
-      manage_book:true
-    });
-  },
-  completeBookManage: function (evt){
-    this.setData({
-      manage_book:false
-    });
-  },
+  selectBook: function (e) { console.log(e)},
+  addBook: function (e) { console.log(e)},
+  editBook: function (e) { console.log(e)},
+  deleteBook: function (e) { console.log(e)},
   /**
    * 生命周期函数--监听页面加载
    */

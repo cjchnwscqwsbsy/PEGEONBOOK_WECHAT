@@ -2,7 +2,8 @@
 <view class="container" style="position: relative">
   <image class="index-add-statement" src="/image/common/add_cricle.png" mode="scaleToFill" bind:tap="addStatement"/>
   <view class="index-book-container">
-    <select_box_editable class="index-book" currentValue="{{current_book_name}}" optionList="{{bookList}}" onSelect="{{onSelect}}"/>
+    <select_box_editable class="index-book" currentValue="{{current_book_name}}" optionList="{{bookList}}"
+      bindselect="selectBook" bindadd="addBook" bindedit="editBook" binddelete="deleteBook" />
     <!--<view class="index-book" bind:tap="showOrHideBookList">-->
       <!--<text>{{current_book_name}}</text>-->
       <!--<image style="height: 20rpx; width:26rpx; margin-left: 20rpx" src="{{arrowPicSrc}}" mode="scaleToFill"/>-->

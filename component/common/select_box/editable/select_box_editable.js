@@ -37,17 +37,30 @@ Component({
         manageOption:!this.data.manageOption,
       })
     },
-    onDelete: function () {
-
+    onDelete: function (e) {
+      console.log('trigger delete')
+      this.triggerEvent('delete',{
+        id: e.currentTarget.dataset.id
+      })
     } ,
-    onEdit: function () {
-
+    onEdit: function (e) {
+      this.triggerEvent('edit',{
+        id: e.currentTarget.dataset.id
+      })
     } ,
-    onAdd: function () {
-
+    onAdd: function (e) {
+      this.triggerEvent('add')
     } ,
-    onSelect: function () {
-
+    onSelect: function (e) {
+      this.setData({
+        showOption:!this.data.showOption,
+        currentId : e.target.dataset.id,
+        currentValue : e.target.dataset.name
+      });
+      this.triggerEvent('select',{
+        currentId : e.target.dataset.id,
+        currentValue : e.target.dataset.name
+      })
     } ,
   }
 })
