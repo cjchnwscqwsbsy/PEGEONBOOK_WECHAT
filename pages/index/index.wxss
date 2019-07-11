@@ -17,16 +17,27 @@
   position: relative;
 }
 .index-book{
-  border-radius: 16rpx;
-  border-style: solid;
-  border-width: 4rpx;
-  border-color: #a8a8a8;
-  width: 30%;
+  /*border-radius: 16rpx;*/
+  /*border-style: solid;*/
+  /*border-width: 4rpx;*/
+  /*border-color: #a8a8a8;*/
+  width: 25%;
   height: 43%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/*.index-book{*/
+  /*border-radius: 16rpx;*/
+  /*border-style: solid;*/
+  /*border-width: 4rpx;*/
+  /*border-color: #a8a8a8;*/
+  /*width: 30%;*/
+  /*height: 43%;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+/*}*/
 .index-bookList{
   /*width: 40%;*/
   padding-left: 25rpx;

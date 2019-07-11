@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/config/config_budget_model/config_budget_model",
     "pages/budget/budget_init/budget_init",
-      "pages/statement/statement",
+    "pages/statement/statement",
     "pages/budget/budget",
     "pages/asset/asset",
     "pages/asset/asset_detail/asset_detail",

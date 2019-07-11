@@ -2,21 +2,21 @@
 <view class="container" style="position: relative">
   <image class="index-add-statement" src="/image/common/add_cricle.png" mode="scaleToFill" bind:tap="addStatement"/>
   <view class="index-book-container">
-    <!--<select_box_editable currentValue="{{current_book_name}}" optionList="{{bookList}}" onSelect="{{onSelect}}"/>-->
-    <view class="index-book" bind:tap="showOrHideBookList">
-      <text>{{current_book_name}}</text>
-      <image style="height: 20rpx; width:26rpx; margin-left: 20rpx" src="{{arrowPicSrc}}" mode="scaleToFill"/>
-    </view>
-    <view class="index-bookList" wx:if="{{showBookList}}">
-      <view class="index-bookList-item" wx:for="{{bookList}}" wx:key="{{item.id}}">
-        {{item.name}}
-        <view class="index-bookList-item-modify" wx:if="{{manage_book}}">编辑</view>
-        <view class="index-bookList-item-delete" wx:if="{{manage_book}}">删除</view>
-      </view>
-      <view class="index-bookList-manage" wx:if="{{!manage_book}}" bind:tap="manageBook">管理账本</view>
-      <view class="index-bookList-add" wx:if="{{manage_book}}">添加账本</view>
-      <view class="index-bookList-complite" wx:if="{{manage_book}}" bind:tap="completeBookManage">完成</view>
-    </view>
+    <select_box_editable class="index-book" currentValue="{{current_book_name}}" optionList="{{bookList}}" onSelect="{{onSelect}}"/>
+    <!--<view class="index-book" bind:tap="showOrHideBookList">-->
+      <!--<text>{{current_book_name}}</text>-->
+      <!--<image style="height: 20rpx; width:26rpx; margin-left: 20rpx" src="{{arrowPicSrc}}" mode="scaleToFill"/>-->
+    <!--</view>-->
+    <!--<view class="index-bookList" wx:if="{{showBookList}}">-->
+      <!--<view class="index-bookList-item" wx:for="{{bookList}}" wx:key="{{item.id}}">-->
+        <!--{{item.name}}-->
+        <!--<view class="index-bookList-item-modify" wx:if="{{manage_book}}">编辑</view>-->
+        <!--<view class="index-bookList-item-delete" wx:if="{{manage_book}}">删除</view>-->
+      <!--</view>-->
+      <!--<view class="index-bookList-manage" wx:if="{{!manage_book}}" bind:tap="manageBook">管理账本</view>-->
+      <!--<view class="index-bookList-add" wx:if="{{manage_book}}">添加账本</view>-->
+      <!--<view class="index-bookList-complite" wx:if="{{manage_book}}" bind:tap="completeBookManage">完成</view>-->
+    <!--</view>-->
   </view>
   <view class="index-budget-container">
     <view class="index-budget-income">

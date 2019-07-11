@@ -13,8 +13,8 @@
       <view class="select-box-option-item-delete" wx:if="{{manageOption}}"
             catch:tap="onDelete" data-id="{{item.id}}">删除</view>
     </view>
-    <view class="select-box-option-list-manage" wx:if="{{!manageOption}}" bind:tap="onManage">管理账本</view>
-    <view class="select-box-option-list-add" wx:if="{{manageOption}}">添加账本</view>
+    <view class="select-box-option-list-manage" wx:if="{{!manageOption}}" bind:tap="onManage">管理</view>
+    <view class="select-box-option-list-add" wx:if="{{manageOption}}">添加</view>
     <view class="select-box-option-list-complite" wx:if="{{manageOption}}" bind:tap="onManage">完成</view>
   </view>
 </view>
